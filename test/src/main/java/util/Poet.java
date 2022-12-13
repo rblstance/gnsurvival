@@ -21,7 +21,7 @@ public class Poet {
 		String n2 = user.getName2();
 		String q = user.getQuestion();
 		
-		poet.add(user.getQ_8String(user.getQ_8()) + "에게서 아이를 한 명 건네 받았다 네 이름은 " + n2 + "다 그 애는 싫다고 고개를 저으면서 제 이름은 불운이에요");
+		poet.add(user.getQ_8String(user.getQ_8()) + "에게서 아이를 한 명 건네 받았다 네 이름은 " + n1 + "다 그 애는 내 품에서 그런 이름은 싫다고 제 이름은 불운이에요");
 		poet.add("");
 		
 		if(user.getQ_1() == 1) {
@@ -47,7 +47,7 @@ public class Poet {
 		
 		poet.add("페이지를 넘깁시다 화자의 심경으로 적절한 것을 고르시오");
 		if(user.getQ_4() == 1) {
-			poet.add("기회는 한 번뿐 재시험은 없다");
+			poet.add("기회는 한 번뿐 재시험은 없다고");
 		} else if(user.getQ_4() == 2) {
 			poet.add("간신히 몸을 구겨넣고 우는 화자");
 			poet.add("어때요 이제 괜찮나요");
@@ -93,6 +93,7 @@ public class Poet {
 		}
 		
 		poet.add("");
+		poet.add("불운이 머리맡에서 동화를 읽어주면 ");
 		poet.add("세상은 기쁜 불운으로 가득 차 있고");
 		poet.add("모두 그것을 기꺼이 환영하는구나");
 		poet.add("몰랐어요? 옳은 질문은 다음과 같습니다: " + q);
