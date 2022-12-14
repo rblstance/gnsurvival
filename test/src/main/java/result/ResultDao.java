@@ -216,7 +216,7 @@ public class ResultDao {
 			int rNum = (int)(Math.random()*weapon_in.length);
 			weapon = weapon_in[rNum];
 		}
-		String sql = "update result set q_4=?, inout=?, weapon=? where code=?";
+		String sql = "update result set q_4=?, inoutt=?, weapon=? where code=?";
 		try {
 			this.conn = DBManager.getConnection();
 			this.pstmt = this.conn.prepareStatement(sql);
@@ -344,7 +344,7 @@ public class ResultDao {
 	// question & character
 	public void updateResult(String code, String question, String character) {
 		int c = Integer.parseInt(code);
-		String sql = "update result set question=?, character=? where code=?";
+		String sql = "update result set question=?, characterr=? where code=?";
 		try {
 			this.conn = DBManager.getConnection();
 			this.pstmt = this.conn.prepareStatement(sql);

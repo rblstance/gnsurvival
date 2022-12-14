@@ -22,7 +22,7 @@ public class CharacterDao {
 	// READ
 	public CharacterDto getCharacter(String code) {
 		CharacterDto result = null;
-		String sql = "select * from character where code=?";
+		String sql = "select * from characterr where code=?";
 		try {
 			this.conn = DBManager.getConnection();
 			this.pstmt = this.conn.prepareStatement(sql);
